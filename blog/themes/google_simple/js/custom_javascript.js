@@ -220,7 +220,7 @@ var scrolltotop={
 
     setting: {startline:500, scrollto: 0, scrollduration:1000, fadeduration:[500, 100]},
 
-    controlHTML: '<img src="http://i1155.photobucket.com/albums/p559/scrolltotop/arrow88.png" />', //HTML for control, which is auto wrapped in DIV w/ ID="topcontrol"
+    controlHTML: '<img src="https://roger-sport.com/images/icon/arrow.png" />', //HTML for control, which is auto wrapped in DIV w/ ID="topcontrol"
 
     controlattrs: {offsetx:5, offsety:5}, //offset of control relative to right/ bottom of window corner
 
