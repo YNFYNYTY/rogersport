@@ -1,0 +1,76 @@
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.field {
+  margin: 1px;
+}
+@font-face {
+  font-family: 'fontone';
+  src: url('../fonts/gothic.ttf'); /* IE9 Compat Modes */
+  src: url('../fonts/gothic.ttf') format('truetype'), /* IE6-IE8 */
+       url('../fonts/gothic.ttf') format('truetype'), /* Modern Browsers */
+       url('../fonts/gothic.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/gothic.ttf') format('truetype'); /* Legacy iOS */
+}
+label {
+  font-family: 'fontone';
+  display: block;
+  color: #999999;
+  border-radius: 0px;
+}
+
+input {
+  width: 80%;
+  font-size: 10px;
+  border-radius: 0px;
+}
+
+textarea {
+  font-family: 'fontone';
+  width: 80%;
+  height: 50px;
+  font-size: 10px;
+  border: 1px solid #D9D9D9;
+  border-radius: 0px;
+}
+
+#enviar {
+  font-family: 'fontone';
+  display: inline-block;
+  border: none;
+  font-size: 15px;
+  padding: 10px 5px;
+  background: rgba(255, 255, 255, 0.33);
+  color: white;
+  margin-top: 5px;
+  width: 80%;
+  text-align: center;
+}
+
+#enviar:hover, #enviar:focus {
+  opacity: 0.75;
+  cursor: pointer;
+}
+
+#enviar:active {
+  opacity: 1;
+  box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.1) inset;
+}
+
+.success {
+  font-size: 12px;
+  padding: 0px;
+  margin-top: -8px;
+  color: white;
+  background-color: rgba(62, 255, 103, 0.58); 
+}
+
+.error {
+  font-size: 12px;
+  padding: 0px;
+  margin-top: -8px;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.33);
+}

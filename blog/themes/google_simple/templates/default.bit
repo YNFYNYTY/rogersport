@@ -1,0 +1,192 @@
+<!DOCTYPE HTML>
+<html lang="<?php echo Blog::language() ?>">
+<head>
+<?php
+	// Charset, title, description, keywords, robots, etc
+	echo Blog::meta_tags();
+
+	// Include CSS from theme
+	echo Blog::css(array('normalize.css','bootstrap.css','custom_style.css', 'main.css', 'post.css', 'page.css', 'plugins.css', 'rainbow.css'));
+
+	// Include Jquery
+	echo Blog::jquery();
+
+	// Include Javascript from theme
+	echo Blog::javascript(array('rainbow-custom.min.js','bootstrap.min.js', 'custom_javascript.js'));
+
+	// Include Favicon, default path: theme/css/img/favicon.ico
+	echo Blog::favicon();
+
+	// Plugins for <head></head>
+	foreach($plugins as $plugin)
+	{
+		echo $plugin->blog_head();
+	}
+?>
+</head>
+<body>
+
+<!-- HEADER -->
+<header id="head">
+	<div class="navbar navbar-inverse navbar-fixed" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="http://roger-sport.com/index.html"><div class="mainlogo"></div></a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="dropdown"> 
+		          <a href="http://roger-sport.com/index.html#" class="dropdown-toggle" data-toggle="dropdown">  TECNOLOGIAS  <span class="caret"></span></a>
+		          <ul class="dropdown-menu" role="menu">
+		            <li><a href="http://roger-sport.com/views/materiales.html">MATERIALES</a></li>
+		            <li><a href="http://roger-sport.com/views/badanas.html">BADANAS</a></li>
+          		</ul>
+        		</li>
+						<li class="dropdown">
+		          <a href="http://roger-sport.com/index.html#" class="dropdown-toggle" data-toggle="dropdown">  PERSONALIZADO  <span class="caret"></span></a>
+		          <ul class="dropdown-menu" role="menu">
+		            <li><a href="http://roger-sport.com/views/ciclismocustom.html">CICLISMO</a></li>
+                <li><a href="http://roger-sport.com/views/duatloncustom.html">TRI/DUATLON</a></li>
+                <li><a href="http://roger-sport.com/views/runningcustom.html">ATLETISMO</a></li>
+                <li class="divider"></li>
+                <li><a href="http://roger-sport.com/views/complementoscustom.html">COMPLEMENTOS</a></li>
+          		</ul>
+        		</li>
+        		<li class="dropdown">
+		          <a href="http://roger-sport.com/index.html#" class="dropdown-toggle" data-toggle="dropdown">  CATALOGO  <span class="caret"></span></a>
+		          <ul class="dropdown-menu" role="menu">
+		            <li><a href="http://roger-sport.com/views/ciclismocatalogo.html">CICLISMO</a></li>
+                <li><a href="http://roger-sport.com/views/duatloncatalogo.html">TRI/DUATLON</a></li>
+                <li><a href="http://roger-sport.com/views/runningcatalogo.html">ATLETISMO</a></li>
+                <li class="divider"></li>
+                <li><a href="http://roger-sport.com/views/complementoscatalogo.html">COMPLEMENTOS</a></li>
+          		</ul>
+        		</li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+        		  <li><a href="http://roger-sport.com/views/contacto.html">  CONTACTO  </a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+</header>
+
+<div id="container">
+
+	<!-- MAIN -->
+	<section id="main">
+
+		<!-- SIDEBAR -->
+		<section id="sidebar">
+			<?php
+				foreach($plugins as $plugin)
+				{
+					if($plugin->blog_body())
+					{
+						echo '<div class="plugin_box '.$plugin->get_slug_name().'">';
+							echo '<h3 class="title">'.$plugin->get_field_db('title').'</h3>';
+							echo $plugin->blog_body();
+						echo '</div>';
+					}
+				}
+			?>
+		</section>
+
+		<!-- MAIN -->
+		<section id="left">
+			<?php
+				include(THEME_VIEWS . $layout['view']);
+			?>
+		</section>
+
+	</section>
+
+	<!-- FOOTER -->
+	<footer id="foot">
+	
+		<script>
+		$(".top").click(function(){
+			$("html, body").animate({ scrollTop: 0 }, 600);
+			return false;
+		});
+		</script>
+	</footer>
+
+</div>
+<div class='footer'>
+          
+          <div class="footer">
+          
+            <div class="container_footer">
+              <div class="col-lg-3 col-md-3">
+                <h5> ® ROGER-SPORT</h5>
+                  <ul>
+                    <li><a href="files/rs-avisolegal.pdf">Aviso legal</a></li>
+                  </ul>
+                <h5>CICLISMO</h5>
+                  <ul>
+                    <li><a href="../../../../catalog_views/maillotcorto-storm.html">Conjunto verano I</a></li>
+                    <li><a href="../../../../catalog_views/chaleco-storm.html">Conjunto verano II</a></li>
+                    <li><a href="../../../../catalog_views/maillotlargo-storm.html">Conjunto entretiempo</a></li>
+                    <li><a href="../../../../catalog_views/chaqueta-storm.html">Conjunto invierno</a></li>
+                    <li><a href="../../../../catalog_views/buzo-eus.html">Buzo</a></li>
+                    <li><a href="../../../../catalog_views/chubasquero-techless.html">Chubasquero</a></li>
+                    <li><a href="../../../../views/ciclismocustom.html">Equipaciones personalizadas</a></li>
+                  </ul>
+              </div>
+
+              <div class="col-lg-3 col-md-3">
+                <h5>RUNNING</h5>
+                  <ul>
+                    <li><a href="../../../../catalog_views/storm-red.html">Camiseta</a></li>
+                    <li><a href="../../../../catalog_views/short-dark.html">Pantalon corto</a></li>
+                    <li><a href="../../../../views/runningcustom.html">Equipaciones personalizadas</a></li>
+                  </ul>
+                  <h5>DUA/TRIATLON</h5>
+                  <ul>
+                    <li><a href="../../../../catalog_views/body-gear.html">Body</a></li>
+                    <li><a href="../../../../views/duatloncustom.html">Equipaciones personalizadas</a></li>
+                  </ul>
+                  <h5>COMPLEMENTOS</h5>
+                  <ul>
+                    <li><a href="../../../../views/complementoscustom.html">Personalizado</a></li>
+                    <li><a href="../../../../views/complementoscatalogo.html">Catalogo</a></li>
+                  </ul>
+              </div>
+
+              <div class="col-lg-3 col-md-3">
+                <h5>TECNOLOGIAS</h5>
+                  <ul>
+                    <li><a href="../../../../views/badanas.html">Badanas</a></li>
+                    <li><a href="../../../../views/materiales.html">Materiales</a></li>
+                  </ul>
+                <h5>SOBRE NOSOTROS</h5>
+                  <ul>
+                    <li><a href="../../../../views/about.html">Quienes somos</a></li>
+                    <li><a href="../../../../views/contacto.html">Contacto</a></li>
+                  </ul>
+               
+              
+                <h5>DUDAS</h5>
+                  <ul>
+                    <li><a href="../../../../views/faq.html">Preguntas frecuentes</a></li>
+                  </ul>
+              </div>
+
+              <div class="col-lg-3 col-md-3">
+              <h5>SIGUENOS</h5> <a href="https://www.facebook.com/pages/Roger-Sport/616391605087554?ref=hl"><div id="facebook-icon"></div></a>
+                              <a href="https://plus.google.com/102787408850322895760/about?_ga=1.17424958.626591686.1435356668" rel="publisher"><div id="googleplus-icon"></div></a>
+                
+              </div>
+
+            </div>
+          
+        </div>
+</body>
+</html>

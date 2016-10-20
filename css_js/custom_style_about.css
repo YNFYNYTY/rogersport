@@ -1,0 +1,49 @@
+.history-1 {
+	font-size: 17px;
+	line-height: 1.6;
+	font-weight: 300;
+	color: rgb(80, 80, 80);
+}
+.history-2 {
+	font-size: 17px;
+	line-height: 1.6;
+	font-weight: 300;
+	color: rgb(130, 130, 130);
+}
+.history-3 {
+	font-size: 17px;
+	line-height: 1.6;
+	font-weight: 300;
+	color: rgb(80, 80, 80);
+}
+.history-4 {
+	font-size: 17px;
+	line-height: 1.6;
+	font-weight: 300;
+	color: rgb(130, 130, 130);
+}
+.history-5 {
+	padding: 30px;
+	line-height: 1.6;
+	font-size: 25px;
+	font-weight: 800;
+	text-align: center;
+	color: red;
+}
+.container-about .about-title h2{
+	text-align: center;
+	font-size: 45px;
+	margin-bottom: 40px;
+}
+body {
+	background:  url(../images/background/back03.jpg) 50% 0% / cover;
+	background-attachment: fixed;
+	background-position: center top;
+	margin: 0 auto;
+}
+.container-about {
+	margin-top: 120px;
+	margin-right: 12%;
+	margin-left: 12%;
+	margin-bottom: 150px;
+}

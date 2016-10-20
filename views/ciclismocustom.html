@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Empresa especializada en la fabricación de equipaciones personalizadas. Specializing in the manufacture personalized equipment manufacturer Company">
+    <meta name="keywords" content="ciclismo, bici, personalizado, personalizada, equipación, maillot, culotte, roger, sport, deporte, duatlon, triatlon, mtb, body, run, calidad, moderno, simple, diseño">
+    <meta name="author" content="Roger Briz">
+    <link rel="icon" href="../images/icon/rsicon.png">
+    <title>ROGER-SPORT</title>
+    <link href="../bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+    <link href="../css_js/custom_style.css" rel="stylesheet">
+    <link href="../css_js/style.css" rel="stylesheet">
+    <script type="text/javascript" src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="../css_js/custom_javascript.js"></script>
+		<script type="text/javascript" src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../css_js/app.js"></script>
+
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="../index.html"><img class='mainlogo' src= '../images/brand/mainlogo.png'></a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+		          <a href='#' class="dropdown-toggle" data-toggle="dropdown">  TECNOLOGIAS  <span class="caret"></span></a>
+		          <ul class="dropdown-menu" role="menu">
+		            <li><a href="materiales.html">MATERIALES</a></li>
+		            <li><a href="badanas.html">BADANAS</a></li>
+          		</ul>
+        		</li>
+						<li class="dropdown">
+		          <a href='#' class="dropdown-toggle" data-toggle="dropdown">  PERSONALIZADO  <span class="caret"></span></a>
+		          <ul class="dropdown-menu" role="menu">
+		            <li class="active"><a href="ciclismocustom.html">CICLISMO</a></li>
+		            <li><a href="duatloncustom.html">TRI/DUATLON</a></li>
+		            <li><a href="runningcustom.html">ATLETISMO</a></li>
+		            <li><a href="complementoscustom.html">COMPLEMENTOS</a></li>
+          		</ul>
+        		</li>
+        		<li class="dropdown">
+		          <a href='#' class="dropdown-toggle" data-toggle="dropdown">  CATALOGO  <span class="caret"></span></a>
+		          <ul class="dropdown-menu" role="menu">
+		            <li><a href="ciclismocatalogo.html">CICLISMO</a></li>
+                <li><a href="duatloncatalogo.html">TRI/DUATLON</a></li>
+                <li><a href="runningcatalogo.html">ATLETISMO</a></li>
+
+                <li><a href="complementoscatalogo.html">COMPLEMENTOS</a></li>
+          		</ul>
+        		</li>
+
+            </ul>
+              <ul class="nav navbar-nav navbar-right">
+              <li><a href="/blog">BLOG</a></li>
+        		  <li><a href="contacto.html">  CONTACTO  </a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+        <div class="btn-group btn-group-justified">
+          <div class="btn-group">
+            <button type="button"id ='coldseason' class="btn btn-default"><a class='season' title="Invierno"><img class='img-responsive clothes-typetoshow' src="../images/icon/bad-weather2.png"></a></button>
+          </div>
+          <div class="btn-group">
+            <button type="button" id ='hotseason' class="btn btn-default"><a class ='season' title="Verano"><img class='img-responsive clothes-typetoshow' src="../images/icon/sun2.png"></a></button>
+          </div>
+          <div class="btn-group">
+            <button type="button" id ='mtb' class="btn btn-default"><a class ='season' title="Mountain Bike"><img class='img-responsive clothes-typetoshow' src="../images/icon/mtb.png"></a></button>
+          </div>
+          <div class="btn-group">
+            <button type="button" id ='buzo' class="btn btn-default"><a class ='season' title="Buzo"><img class='img-responsive clothes-typetoshow' src="../images/icon/buzo.png"></a></button>
+          </div>
+
+        </div>
+
+        <div class="container_custom_intro">
+
+            <div class="row">
+
+              <div class="col-lg-2 col-sm-3 col-md-3 col-xs-12">
+                <img id="close-button" src="../images/icon/close.png">
+              </div>
+              <div class="col-lg-4 col-sm-9 col-md-9 col-xs-12">
+                <p class="custom-intro-text">Si tienes una idea aproximada del diseño que quieres puedes descargarte nuestras plantillas y mandárnosla con un pequeño boceto, nosotros te ayudaremos.<br><a href='contacto.html'>¿Prefieres contárnoslo?</a></p>
+              </div>
+              <div class="col-lg-2 col-sm-4 col-md-4 col-xs-12">
+                <a title=' Plantilla-> Maillot corto | Culotte corto' href="../files/summerlayout.zip"><img class='layouts' src="../images/layouts/summerlayout.png"></a>
+              </div>
+              <div class="col-lg-2 col-sm-4 col-md-4 col-xs-12">
+                <a title=' Plantilla-> Buzo ciclismo | Body tri/duatlon' href="../files/buzobodylayout.zip"><img  class='layouts' src="../images/layouts/buzolayout.png"></a>
+              </div>
+               <div class="col-lg-2 col-sm-4 col-md-4 col-xs-12">
+                <a title=' Plantilla-> Maillot largo | Culotte largo' href="../files/winterlayout.zip"><img class='layouts' src="../images/layouts/winterlayout.png"></a>
+              </div>
+
+
+            </div>
+        </div>
+
+
+
+        <div class='container_custom'>
+
+         <div class="row">
+
+            <div class="col-sm-6 col-md-4 summer">
+              <div class="thumbnail" id ='thumb47'>
+                <img src="../images/bike-custom/betibilbo-conjuntocorto-front.jpg" alt="...">
+                <div class="caption">
+                  <div  class='textoverimg' id='thumb47text'><h3>BETI BILBO</h3>
+                  <h6><strong>Conjunto verano  2015-2016</strong></h6></div>
+                  <p id= 'imgback47'><img src="../images/bike-custom/betibilbo-conjuntocorto-back.jpg" alt="..."></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 summer">
+              <div class="thumbnail" id ='thumb49'>
+                <img src="../images/bike-custom/onati-conjuntocorto-front.jpg" alt="...">
+                <div class="caption">
+                  <div  class='textoverimg' id='thumb49text'><h3>TXANTXIKUAK</h3>
+                  <h6><strong>Conjunto verano  2015-2016</strong></h6></div>
+                  <p id= 'imgback49'><img src="../images/bike-custom/onati-conjuntocorto-back.jpg" alt="..."></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 summer">
+              <div class="thumbnail" id ='thumb52'>
+                <img src="../images/bike-custom/bordeaux-conjuntocorto-front.jpg" alt="...">
+                <div class="caption">
+                  <div  class='textoverimg' id='thumb52text'><h3>BILBAO BORDEAUX</h3>
+                  <h6><strong>Conjunto verano  2015-2016</strong></h6></div>
+                  <p id= 'imgback52'><img src="../images/bike-custom/bordeaux-conjuntocorto-back.jpg" alt="..."></p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="row">
+
+            
+            <div class="col-sm-6 col-md-4 summer">
+              <div class="thumbnail" id ='thumb50'>
+                <img src="../images/bike-custom/elgoibar-conjuntocorto-front.jpg" alt="...">
+                <div class="caption">
+                  <div  class='textoverimg' id='thumb50text'><h3>ELGOIBAR</h3>
+                  <h6><strong>Conjunto verano  2015-2016</strong></h6></div>
+                  <p id= 'imgback50'><img src="../images/bike-custom/elgoibar-conjuntocorto-back.jpg" alt="..."></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 summer">
+              <div class="thumbnail" id ='thumb44'>
+                <img src="../images/bike-custom/otxe-conjuntocorto-front.jpg" alt="...">
+                <div class="caption">
+                  <div  class='textoverimg' id='thumb44text'><h3>OTXE</h3>
+                  <h6><strong>Conjunto verano  2014-2015</strong></h6></div>
+                  <p id= 'imgback44'><img src="../images/bike-custom/otxe-conjuntocorto-back.jpg" alt="..."></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 summer">
+              <div class="thumbnail" id ='thumb43'>
+                <img src="../images/bike-custom/orbea-conjuntocorto-front.jpg" alt="...">
+                <div class="caption">
+                  <div  class='textoverimg' id='thumb43text'><h3>CLUB ORBEA</h3>
+                  <h6><strong>Conjunto verano  2014-2015</strong></h6></div>
+                  <p id= 'imgback43'><img src="../images/bike-custom/orbea-conjuntocorto-back.jpg" alt="..."></p>
+                </div>
+              </div>
+            </div>
+
+            </div>
+             <div class="row">
+
+            <div class="col-sm-6 col-md-4 summer">
+              <div class="thumbnail" id ='thumb7'>
+                <img src="../images/bike-custom/art-conjuntocorto-front.jpg" alt="...">
+                <div class="caption">
+                  <div  class='textoverimg' id='thumb7text'><h3>ART</h3>
+                  <h6><strong>Conjunto verano  2014-2015</strong></h6></div>
+                  <p id= 'imgback7'><img src="../images/bike-custom/art-conjuntocorto-back.jpg" alt="..."></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 summer">
+              <div class="thumbnail" id ='thumb8'>
+                <img src="../images/bike-custom/euskadienbtt-conjuntocorto-front.jpg" alt="...">
+                <div class="caption">
+                  <div  class='textoverimg' id='thumb8text'><h3>EUSKADIEN BTT</h3>
+                  <h6><strong>Conjunto verano  2014-2015</strong></h6></div>
+                  <p id= 'imgback8'><img src="../images/bike-custom/euskadienbtt-conjuntocorto-back.jpg" alt="..."></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 summer">
+              <div class="thumbnail" id ='thumb9'>
+                <img src="../images/bike-custom/euskarazbizi-conjuntocorto-front.jpg" alt="...">
+                <div class="caption">
+                  <div  class='textoverimg' id='thumb9text'><h3>EUSKARAZ BIZI</h3>
+                  <h6><strong>Conjunto verano  2014-2015</strong></h6></div>
+                  <p id= 'imgback9'><img src="../images/bike-custom/euskarazbizi-conjuntocorto-back.jpg" alt="..."></p>
+                </div>
+              </div>
+            </div>
+
+            </div>
+
+             <div class="row">
+
+            <div class="col-sm-6 col-md-4 summer">
+              <div class="thumbnail" id ='thumb10'>
+                <img src="../images/bike-custom/ferlo-conjuntocorto-front.jpg" alt="...">
+                <div class="caption">
+                  <div  class='textoverimg' id='thumb10text'><h3>FERLO</h3>
+                  <h6><strong>Conjunto verano  2014-2015</strong></h6></div>
+                  <p id= 'imgback10'><img src="../images/bike-custom/ferlo-conjuntocorto-back.jpg" alt="..."></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 summer">
+              <div class="thumbnail" id ='thumb11'>
+                <img src="../images/bike-custom/kea-conjuntocorto-front.jpg" alt="...">
+                <div class="caption">
+                  <div  class='textoverimg' id='thumb11text'><h3>KEA</h3>
+                  <h6><strong>Conjunto verano  2014-2015</strong></h6></div>
+                  <p id= 'imgback11'><img src="../images/bike-custom/kea-conjuntocorto-back.jpg" alt="..."></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 summer">
+              <div class="thumbnail" id ='thumb12'>
+                <img src="../images/bike-custom/krikelion-conjuntocorto-front.jpg" alt="...">
+                <div class="caption">
+                  <div  class='textoverimg' id='thumb12text'><h3>KRIKELION BT</h3>
+                  <h6><strong>Conjunto verano  2014-2015</strong></h6></div>
+                  <p id= 'imgback12'><img src="../images/bike-custom/krikelion-conjuntocorto-back.jpg" alt="..."></p>
+                </div>
+              </div>
+            </div>
+
+            </div>
+
+             <div class="row">
+
+            <div class="col-sm-6 col-md-4 summer">
+              <div class="thumbnail" id ='thumb13'>
+                <img src="../images/bike-custom/nivel3-conjuntocorto-front.jpg" alt="...">
+                <div class="caption">
+                  <div  class='textoverimg' id='thumb13text'><h3>NIVEL 3</h3>
+                  <h6><strong>Conjunto verano  2012-2013</strong></h6></div>
+                  <p id= 'imgback13'><img src="../images/bike-custom/nivel3-conjuntocorto-back.jpg" alt="..."></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 summer">
+              <div class="thumbnail" id ='thumb14'>
+                <img src="../images/bike-custom/zamudio-conjuntocorto-front.jpg" alt="...">
+                <div class="caption">
+                  <div  class='textoverimg' id='thumb14text'><h3>ZAMUDIO</h3>
+                  <h6><strong>Conjunto verano  2014-2015</strong></h6></div>
+                  <p id= 'imgback14'><img src="../images/bike-custom/zamudio-conjuntocorto-back.jpg" alt="..."></p>
+                </div>
+              </div>
+            </div>
+
+             <div class="col-sm-6 col-md-4 summer">
+              <div class="thumbnail" id ='thumb15'>
+                <img src="../images/bike-custom/zurich-conjuntocorto-front.jpg" alt="...">
+                <div class="caption">
+                  <div  class='textoverimg' id='thumb15text'><h3>SOC. CICLISTA GERNIKESA</h3>
+                  <h6><strong>Conjunto verano  2012-2013</strong></h6></div>
+                  <p id= 'imgback15'><img src="../images/bike-custom/zurich-conjuntocorto-back.jpg" alt="..."></p>
+                </div>
+              </div>
+            </div>
+
+            </div><!-- end row -->
+            <!-- id hasta 15  -->
+            <!-- empieza desde id 28 -->
+            <div class="row">
+
+            <div class="col-sm-6 col-md-4 summer">
+              <div class="thumbnail" id ='thumb28'>
+                <img src="../images/bike-custom/ciclositurriaga-conjuntocorto-front.jpg" alt="...">
+                <div class="caption">
+                  <div  class='textoverimg' id='thumb28text'><h3>CICLOS ITURRIAGA</h3>
+                  <h6><strong>Conjunto verano  2014-2015</strong></h6></div>
+                  <p id= 'imgback28'><img src="../images/bike-custom/ciclositurriaga-conjuntocorto-back.jpg" alt="..."></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 summer">
+              <div class="thumbnail" id ='thumb29'>
+                <img src="../images/bike-custom/culmenor-conjuntocorto-front.jpg" alt="...">
+                <div class="caption">
+                  <div  class='textoverimg' id='thumb29text'><h3>GARAI T.T</h3>
+                  <h6><strong>Conjunto verano  2014-2015</strong></h6></div>
+                  <p id= 'imgback29'><img src="../images/bike-custom/culmenor-conjuntocorto-back.jpg" alt="..."></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 summer">
+              <div class="thumbnail" id ='thumb30'>
+                <img src="../images/bike-custom/enkarterri-conjuntocorto-front.jpg" alt="...">
+                <div class="caption">
+                  <div  class='textoverimg' id='thumb30text'><h3>ENKARTERRI</h3>
+                  <h6><strong>Conjunto verano  2014-2015</strong></h6></div>
+                  <p id= 'imgback30'><img src="../images/bike-custom/enkarterri-conjuntocorto-back.jpg" alt="..."></p>
+                </div>
+              </div>
+            </div>
+
+            </div><!-- end row -->
+
+            <div class="row">
+
+            <div class="col-sm-6 col-md-4 summer">
+              <div class="thumbnail" id ='thumb2'>
+                <img src="../images/bike-custom/ciclosgarcia-conjuntocorto-front.jpg" alt="...">
+                <div class="caption">
+                  <div  class='textoverimg' id='thumb2text'><h3>ESPINOSA</h3>
+                  <h6><strong>Conjunto verano  2014-2015</strong></h6></div>
+                  <p id= 'imgback2'><img src="../images/bike-custom/ciclosgarcia-conjuntocorto-back.jpg" alt="..."></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 summer">
+              <div class="thumbnail" id ='thumb32'>
+                <img src="../images/bike-custom/iruherri-conjuntocorto-front.jpg" alt="...">
+                <div class="caption">
+                  <div  class='textoverimg' id='thumb32text'><h3>IRU HERRI</h3>
+                  <h6><strong>Conjunto verano  2012-2013</strong></h6></div>
+                  <p id= 'imgback32'><img src="../images/bike-custom/iruherri-conjuntocorto-back.jpg" alt="..."></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 summer">
+              <div class="thumbnail" id ='thumb33'>
+                <img src="../images/bike-custom/kirolene-conjuntocorto-front.jpg" alt="...">
+                <div class="caption">
+                  <div  class='textoverimg' id='thumb33text'><h3>INSTITUTUA DURANGO</h3>
+                  <h6><strong>Conjunto verano  2013-2014</strong></h6></div>
+                  <p id= 'imgback33'><img src="../images/bike-custom/kirolene-conjuntocorto-back.jpg" alt="..."></p>
+                </div>
+              </div>
+            </div>
+
+            </div><!-- end row -->
+
+            <div class="row">
+
+            <div class="col-sm-6 col-md-4 summer">
+              <div class="thumbnail" id ='thumb34'>
+                <img src="../images/bike-custom/labicicleta-conjuntocorto-front.jpg" alt="...">
+                <div class="caption">
+                  <div  class='textoverimg' id='thumb34text'><h3>LA BICICLETA</h3>
+                  <h6><strong>Conjunto verano  2013-2014</strong></h6></div>
+                  <p id= 'imgback34'><img src="../images/bike-custom/labicicleta-conjuntocorto-back.jpg" alt="..."></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 summer">
+              <div class="thumbnail" id ='thumb35'>
+                <img src="../images/bike-custom/scb-conjuntocorto-front.jpg" alt="...">
+                <div class="caption">
+                  <div  class='textoverimg' id='thumb35text'><h3>SOC. CICLISTA BILBAINA</h3>
+                  <h6><strong>Conjunto verano  2014-2015</strong></h6></div>
+                  <p id= 'imgback35'><img src="../images/bike-custom/scb-conjuntocorto-back.jpg" alt="..."></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 summer">
+              <div class="thumbnail" id ='thumb36'>
+                <img src="../images/bike-custom/ulma-conjuntocorto-front.jpg" alt="...">
+                <div class="caption">
+                  <div  class='textoverimg' id='thumb36text'><h3>ULMA</h3>
+                  <h6><strong>Conjunto verano  2015-2016</strong></h6></div>
+                  <p id= 'imgback36'><img src="../images/bike-custom/ulma-conjuntocorto-back.jpg" alt="..."></p>
+                </div>
+              </div>
+            </div>
+
+            </div><!-- end row -->
+
+            <div class="row">
+
+            <div class="col-sm-6 col-md-4 summer">
+              <div class="thumbnail" id ='thumb37'>
+                <img src="../images/bike-custom/meloinvento-conjuntocorto-front.jpg" alt="...">
+                <div class="caption">
+                  <div  class='textoverimg' id='thumb37text'><h3>ME LO INVENTO</h3>
+                  <h6><strong>Conjunto verano  2013-2014</strong></h6></div>
+                  <p id= 'imgback37'><img src="../images/bike-custom/meloinvento-conjuntocorto-back.jpg" alt="..."></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 summer">
+              <div class="thumbnail" id ='thumb38'>
+                <img src="../images/bike-custom/lejarreta-conjuntocorto-front.jpg" alt="...">
+                <div class="caption">
+                  <div  class='textoverimg' id='thumb38text'><h3>IÑAKIREN BIDEAK</h3>
+                  <h6><strong>Honorífica a Iñaki Lejarreta</strong></h6></div>
+                  <p id= 'imgback38'><img src="../images/bike-custom/lejarreta-conjuntocorto-back.jpg" alt="..."></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 summer">
+              <div class="thumbnail" id ='thumb51'>
+                <img src="../images/bike-custom/suhiltzaileak-conjuntocorto-front.jpg" alt="...">
+                <div class="caption">
+                  <div  class='textoverimg' id='thumb51text'><h3>BOMBEROS VIZCAYA</h3>
+                  <h6><strong>Conjunto verano  2015-2016</strong></h6></div>
+                  <p id= 'imgback51'><img src="../images/bike-custom/suhiltzaileak-conjuntocorto-back.jpg" alt="..."></p>
+                </div>
+              </div>
+            </div>
+
+            </div><!-- end row -->
+
+            <div class="row">
+
+            <div class="col-sm-6 col-md-4 summer">
+              <div class="thumbnail" id ='thumb40'>
+                <img src="../images/bike-custom/cogollos-conjuntocorto-front.jpg" alt="...">
+                <div class="caption">
+                  <div  class='textoverimg' id='thumb40text'><h3>COGOLLOS</h3>
+                  <h6><strong>Conjunto verano  2014-2015</strong></h6></div>
+                  <p id= 'imgback40'><img src="../images/bike-custom/cogollos-conjuntocorto-back.jpg" alt="..."></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 summer">
+              <div class="thumbnail" id ='thumb53'>
+                <img src="../images/bike-custom/cotolino-conjuntocorto-front.jpg" alt="...">
+                <div class="caption">
+                  <div  class='textoverimg' id='thumb53text'><h3>COTOLINO TEAM</h3>
+                  <h6><strong>Conjunto verano  2015-2016</strong></h6></div>
+                  <p id= 'imgback53'><img src="../images/bike-custom/cotolino-conjuntocorto-back.jpg" alt="..."></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 summer">
+              <div class="thumbnail" id ='thumb42'>
+                <img src="../images/bike-custom/medinesa-conjuntocorto-front.jpg" alt="...">
+                <div class="caption">
+                  <div  class='textoverimg' id='thumb42text'><h3>U. C. MEDINESA</h3>
+                  <h6><strong>Conjunto verano  2014-2015</strong></h6></div>
+                  <p id= 'imgback42'><img src="../images/bike-custom/medinesa-conjuntocorto-back.jpg" alt="..."></p>
+                </div>
+              </div>
+            </div>
+
+            </div><!-- end row -->
+
+            <div class="row">
+
+            <div class="col-sm-6 col-md-4 summer">
+              <div class="thumbnail" id ='thumb6'>
+                <img src="../images/bike-custom/arranotaldia-conjuntocorto-front.jpg" alt="...">
+                <div class="caption">
+                  <div  class='textoverimg' id='thumb6text'><h3>ARRANO TALDIA</h3>
+                  <h6><strong>Conjunto verano  2013-2014</strong></h6></div>
+                  <p id= 'imgback6'><img src="../images/bike-custom/arranotaldea-conjuntocorto-back.jpg" alt="..."></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 summer">
+              <div class="thumbnail" id ='thumb3'>
+                <img src="../images/bike-custom/velobur-conjuntocorto-front.jpg" alt="...">
+                <div class="caption">
+                  <div  class='textoverimg' id='thumb3text'><h3>VELOBUR</h3>
+                  <h6><strong>Conjunto verano  2014-2015</strong></h6></div>
+                  <p id= 'imgback3'><img src="../images/bike-custom/velobur-conjuntocorto-back.jpg" alt="..."></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 summer">
+              <div class="thumbnail" id ='thumb45'>
+                <img src="../images/bike-custom/pertxin-conjuntocorto-front.jpg" alt="...">
+                <div class="caption">
+                  <div  class='textoverimg' id='thumb45text'><h3>PERTXIN BIKE</h3>
+                  <h6><strong>Conjunto verano  2014-2015</strong></h6></div>
+                  <p id= 'imgback45'><img src="../images/bike-custom/pertxin-conjuntocorto-back.jpg" alt="..."></p>
+                </div>
+              </div>
+            </div>
+
+            </div><!-- end row -->
+
+            <div class="row">
+
+            <div class="col-sm-6 col-md-4 summer">
+              <div class="thumbnail" id ='thumb46'>
+                <img src="../images/bike-custom/dosport-conjuntocorto-front.jpg" alt="...">
+                <div class="caption">
+                  <div  class='textoverimg' id='thumb46text'><h3>DO SPORT</h3>
+                  <h6><strong>Conjunto verano  2015-2016</strong></h6></div>
+                  <p id= 'imgback46'><img src="../images/bike-custom/dosport-conjuntocorto-back.jpg" alt="..."></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 summer" >
+              <div class="thumbnail" id ='thumb1'>
+                <img src="../images/bike-custom/amaro-conjuntocorto-front.jpg" alt="...">
+                <div class="caption">
+                  <div  class='textoverimg' id='thumb1text'><h3>AMARO</h3>
+                  <h6><strong>Conjunto verano 2014-2015</strong></h6></div>
+                  <p id= 'imgback1'><img src="../images/bike-custom/amaro-conjuntocorto-back.jpg" alt="..."></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 summer">
+              <div class="thumbnail" id ='thumb48'>
+                <img src="../images/bike-custom/lalinea-conjuntocorto-front.jpg" alt="...">
+                <div class="caption">
+                  <div  class='textoverimg' id='thumb48text'><h3>LA LINEA</h3>
+                  <h6><strong>Conjunto verano  2015-2016</strong></h6></div>
+                  <p id= 'imgback48'><img src="../images/bike-custom/lalinea-conjuntocorto-back.jpg" alt="..."></p>
+                </div>
+              </div>
+            </div>
+
+
+
+            </div><!-- end row -->
+
+            <div class="row">
+
+            <div class="col-sm-6 col-md-4 summer">
+              <div class="thumbnail" id ='thumb54'>
+                <img src="../images/bike-custom/espinosa-conjuntocorto-front.jpg" alt="...">
+                <div class="caption">
+                  <div  class='textoverimg' id='thumb54text'><h3>ESPINOSA</h3>
+                  <h6><strong>Conjunto verano  2015-2016</strong></h6></div>
+                  <p id= 'imgback54'><img src="../images/bike-custom/espinosa-conjuntocorto-back.jpg" alt="..."></p>
+                </div>
+              </div>
+            </div>
+
+            <!-- <div class="col-sm-6 col-md-4 summer">
+              <div class="thumbnail" id ='thumb53'>
+                <img src="../images/bike-custom/cotolino-conjuntocorto-front.jpg" alt="...">
+                <div class="caption">
+                  <div  class='textoverimg' id='thumb53text'><h3>COTOLINO TEAM</h3>
+                  <h6><strong>Conjunto verano  2015-2016</strong></h6></div>
+                  <p id= 'imgback53'><img src="../images/bike-custom/cotolino-conjuntocorto-back.jpg" alt="..."></p>
+                </div>
+              </div>
+            </div> -->
+
+            <!-- <div class="col-sm-6 col-md-4 summer">
+              <div class="thumbnail" id ='thumb51'>
+                <img src="../images/bike-custom/suhiltzaileak-conjuntocorto-front.jpg" alt="...">
+                <div class="caption">
+                  <div  class='textoverimg' id='thumb51text'><h3>BOMBEROS VIZCAYA</h3>
+                  <h6><strong>Conjunto verano  2015-2016</strong></h6></div>
+                  <p id= 'imgback51'><img src="../images/bike-custom/suhiltzaileak-conjuntocorto-back.jpg" alt="..."></p>
+                </div>
+              </div>
+            </div> -->
+
+
+
+            </div><!-- end row -->
+
+            <div class="row">
+
+            <!-- <div class="col-sm-6 col-md-4 summer">
+              <div class="thumbnail" id ='thumb3'>
+                <img src="../images/bike-custom/velobur-conjuntocorto-front.jpg" alt="...">
+                <div class="caption">
+                  <div  class='textoverimg' id='thumb3text'><h3>VELOBUR</h3>
+                  <h6><strong>Conjunto verano  2014-2015</strong></h6></div>
+                  <p id= 'imgback3'><img src="../images/bike-custom/velobur-conjuntocorto-back.jpg" alt="..."></p>
+                </div>
+              </div>
+            </div> -->
+
+            <!-- <div class="col-sm-6 col-md-4 summer">
+              <div class="thumbnail" id ='thumb53'>
+                <img src="../images/bike-custom/cotolino-conjuntocorto-front.jpg" alt="...">
+                <div class="caption">
+                  <div  class='textoverimg' id='thumb53text'><h3>COTOLINO TEAM</h3>
+                  <h6><strong>Conjunto verano  2015-2016</strong></h6></div>
+                  <p id= 'imgback53'><img src="../images/bike-custom/cotolino-conjuntocorto-back.jpg" alt="..."></p>
+                </div>
+              </div>
+            </div> -->
+
+            <!-- <div class="col-sm-6 col-md-4 summer">
+              <div class="thumbnail" id ='thumb54'>
+                <img src="../images/bike-custom/suhiltzaileak-conjuntocorto-front.jpg" alt="...">
+                <div class="caption">
+                  <div  class='textoverimg' id='thumb54text'><h3>LA LINEA</h3>
+                  <h6><strong>Conjunto verano  2015-2016</strong></h6></div>
+                  <p id= 'imgback54'><img src="../images/bike-custom/suhiltzaileak-conjuntocorto-back.jpg" alt="..."></p>
+                </div>
+              </div>
+            </div> -->
+
+
+
+            </div><!-- end row -->
+
+            <div class="row">
+
+             <div class="col-sm-6 col-md-4 winter">
+              <div class="thumbnail" id ='thumb24'>
+                <img src="../images/bike-custom/ingeteam-conjuntolargo-front.jpg" alt="...">
+                <div class="caption">
+                  <div  class='textoverimg' id='thumb24text'><h3>INGETEAM</h3>
+                  <h6><strong>Conjunto invierno  2015-2016</strong></h6></div>
+                  <p id= 'imgback24'><img src="../images/bike-custom/ingeteam-conjuntolargo-back.jpg" alt="..."></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 winter">
+              <div class="thumbnail" id ='thumb23'>
+                <img src="../images/bike-custom/betibilbo-conjuntolargo-front.jpg" alt="...">
+                <div class="caption">
+                  <div  class='textoverimg' id='thumb23text'><h3>BETIBILBO</h3>
+                  <h6><strong>Conjunto invierno  2014-2015</strong></h6></div>
+                  <p id= 'imgback23'><img src="../images/bike-custom/betibilbo-conjuntolargo-back.jpg" alt="..."></p>
+                </div>
+              </div>
+            </div>
+
+             <div class="col-sm-6 col-md-4 winter">
+              <div class="thumbnail" id ='thumb18'>
+                <img src="../images/bike-custom/labicicletaculottemaillotlargodelante.jpg" alt="...">
+                <div class="caption">
+                  <div  class='textoverimg' id='thumb18text'><h3>LA BICICLETA</h3>
+                  <h6><strong>Conjunto invierno 2012-2013</strong></h6></div>
+                  <p id= 'imgback18'><img src="../images/bike-custom/labicicletaculottemaillotlargodetras.jpg" alt="..."></p>
+                </div>
+              </div>
+            </div>
+
+            </div>
+
+             <div class="row">
+
+            <div class="col-sm-6 col-md-4 winter">
+              <div class="thumbnail" id ='thumb19'>
+                <img src="../images/bike-custom/lanmovelculottemaillotlargodelante.jpg" alt="...">
+                <div class="caption">
+                  <div  class='textoverimg' id='thumb19text'><h3>LANMOVEL</h3>
+                  <h6><strong>Conjunto invierno  2009-2010</strong></h6></div>
+                  <p id= 'imgback19'><img src="../images/bike-custom/lanmovelculottemaillotlargodetras.jpg" alt="..."></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 winter">
+              <div class="thumbnail" id ='thumb20'>
+                <img src="../images/bike-custom/laudioculottemaillotlargodelante.jpg" alt="...">
+                <div class="caption">
+                  <div  class='textoverimg' id='thumb20text'><h3>LAUDIO</h3>
+                  <h6><strong>Conjunto invierno  2010-2011</strong></h6></div>
+                  <p id= 'imgback20'><img src="../images/bike-custom/laudioculottemaillotlargodetras.jpg" alt="..."></p>
+                </div>
+              </div>
+            </div>
+
+             <div class="col-sm-6 col-md-4 winter">
+              <div class="thumbnail" id ='thumb21'>
+                <img src="../images/bike-custom/zaldivarlagunarteaculottemaillotlargodelante.jpg" alt="...">
+                <div class="caption">
+                  <div  class='textoverimg' id='thumb21text'><h3>LAGUNARTEA</h3>
+                  <h6><strong>Conjunto invierno 2014-2015</strong></h6></div>
+                  <p id= 'imgback21'><img src="../images/bike-custom/zaldibarlargunarteaculottemaillotlargodetras.jpg" alt="..."></p>
+                </div>
+              </div>
+            </div>
+
+            </div>
+
+             <div class="row">
+
+            <div class="col-sm-6 col-md-4 winter">
+              <div class="thumbnail" id ='thumb22'>
+                <img src="../images/bike-custom/lemoaculottemaillotlargodelante.jpg" alt="...">
+                <div class="caption">
+                  <div  class='textoverimg' id='thumb22text'><h3>LEMOA</h3>
+                  <h6><strong>Conjunto invierno  2012-2013</strong></h6></div>
+                  <p id= 'imgback22'><img src="../images/bike-custom/lemoaculottemaillotlargodatras.jpg" alt="..."></p>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="col-sm-6 col-md-4 winter">
+              <div class="thumbnail" id ='thumb17'>
+                <img src="../images/bike-custom/ebkeibarculottemaillotlargodelante.jpg" alt="...">
+                <div class="caption">
+                  <div  class='textoverimg' id='thumb17text'><h3>EBKEIBAR</h3>
+                  <h6><strong>Conjunto invierno  2012-2013</strong></h6></div>
+                  <p id= 'imgback17'><img src="../images/bike-custom/ebkeibarculottemaillotlargodetras.jpg" alt="..."></p>
+                </div>
+              </div>
+            </div>
+
+             <div class="col-sm-6 col-md-4 winter">
+              <div class="thumbnail" id ='thumb16'>
+                <img src="../images/bike-custom/deltecoculottemaillotlargodelante.jpg" alt="...">
+                <div class="caption">
+                  <div  class='textoverimg' id='thumb16text'><h3>EIBAR T.T</h3>
+                  <h6><strong>Conjunto invierno  2012-2013</strong></h6></div>
+                  <p id= 'imgback16'><img src="../images/bike-custom/deltecoculottemaillotlargodetras.jpg" alt="..."></p>
+                </div>
+              </div>
+            </div>
+
+
+            </div>
+
+             <div class="row">
+
+            <div class="col-sm-6 col-md-4 mountain">
+              <div class="thumbnail" id ='thumb23'>
+                <img src="../images/bike-custom-mtb/mtblabicicletadelante.jpg" alt="...">
+                <div class="caption">
+                  <div  class='textoverimg' id='thumb23text'><h3>LA BICICLETA</h3>
+                  <h6><strong>Chaqueta mountain bike 2011-2012</strong></h6></div>
+                  <p id= 'imgback23'><img src="../images/bike-custom-mtb/mtblabicicletadetras.jpg" alt="..."></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 mountain">
+              <div class="thumbnail" id ='thumb24'>
+                <img src="../images/bike-custom-mtb/mtbubdelante.jpg" alt="...">
+                <div class="caption">
+                  <div  class='textoverimg' id='thumb24text'><h3>UNDARRI BIKE</h3>
+                  <h6><strong>Chaqueta mountain bike 2010-2011</strong></h6></div>
+                  <p id= 'imgback24'><img src="../images/bike-custom-mtb/mtbubbigdelante.jpg" alt="..."></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 mountain">
+              <div class="thumbnail" id ='thumb25'>
+                <img src="../images/bike-custom-mtb/durangoMTB-MTB-front.jpg" alt="...">
+                <div class="caption">
+                  <div  class='textoverimg' id='thumb25text'><h3>DURANGO MTB</h3>
+                  <h6><strong>Conjunto mountain bike 2014-2015</strong></h6></div>
+                  <p id= 'imgback25'><img src="../images/bike-custom-mtb/durangoMTB-MTB-back.jpg" alt="..."></p>
+                </div>
+              </div>
+            </div>
+
+            </div>
+
+            <div class="row">
+
+            <div class="col-sm-6 col-md-4 buzos">
+              <div class="thumbnail" id ='thumb25'>
+                <img src="../images/bike-custom-buzo/gastronomiabuzodelante.jpg" alt="...">
+                <div class="caption">
+                  <div  class='textoverimg' id='thumb25text'><h3>SOC. CICLISTA VALENTIN URIONA</h3>
+                  <h6><strong>Buzo de ciclismo manga larga 2012-2013</strong></h6></div>
+                  <p id= 'imgback25'><img src="../images/bike-custom-buzo/gastronomiabuzodetras.jpg" alt="..."></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 buzos">
+              <div class="thumbnail" id ='thumb26'>
+                <img src="../images/bike-custom-buzo/labicicletabuzodelante.jpg" alt="...">
+                <div class="caption">
+                  <div  class='textoverimg' id='thumb26text'><h3>LA BICICLETA</h3>
+                  <h6><strong>Buzo de ciclismo manga larga 2012-2013</strong></h6></div>
+                  <p id= 'imgback26'><img src="../images/bike-custom-buzo/labicicletabuzodetras.jpg" alt="..."></p>
+                </div>
+              </div>
+            </div>
+
+             <div class="col-sm-6 col-md-4 buzos">
+              <div class="thumbnail" id ='thumb27'>
+                <img src="../images/bike-custom-buzo/telleriartebuzodelante.jpg" alt="...">
+                <div class="caption">
+                  <div  class='textoverimg' id='thumb27text'><h3>TELLERIARTE</h3>
+                  <h6><strong>Buzo de ciclismo manga corta 2013-2014</strong></h6></div>
+                  <p id= 'imgback27'><img src="../images/bike-custom-buzo/telleriartebuzodeytas.jpg" alt="..."></p>
+                </div>
+              </div>
+            </div>
+
+            </div>
+
+        </div><!-- end container -->
+
+         <div class='footer'>
+
+            <div class="container_footer">
+              <div class="col-lg-3 col-md-3">
+                <h5> ® ROGER-SPORT</h5>
+                  <ul>
+                    <li><a href="../files/rs-avisolegal.pdf">Aviso legal</a></li>
+                  </ul>
+                <h5>CICLISMO</h5>
+                  <ul>
+                    <li><a href="../catalog_views/maillotcorto-storm.html">Conjunto verano I</a></li>
+                    <li><a href="../catalog_views/chaleco-storm.html">Conjunto verano II</a></li>
+                    <li><a href="../catalog_views/maillotlargo-storm.html">Conjunto entretiempo</a></li>
+                    <li><a href="../catalog_views/chaqueta-storm.html">Conjunto invierno</a></li>
+                    <li><a href="../catalog_views/buzo-eus.html">Buzo</a></li>
+                    <li><a href="../catalog_views/chubasquero-techless.html">Chubasquero</a></li>
+                    <li><a href="ciclismocustom.html">Equipaciones personalizadas</a></li>
+                  </ul>
+              </div>
+
+              <div class="col-lg-3 col-md-3">
+                <h5>RUNNING</h5>
+                  <ul>
+                    <li><a href="../catalog_views/storm-red.html">Camiseta</a></li>
+                    <li><a href="../catalog_views/short-dark.html">Pantalon corto</a></li>
+                    <li><a href="runningcustom.html">Equipaciones personalizadas</a></li>
+                  </ul>
+                  <h5>DUA/TRIATLON</h5>
+                  <ul>
+                    <li><a href="../catalog_views/body-gear.html">Body</a></li>
+                    <li><a href="duatloncustom.html">Equipaciones personalizadas</a></li>
+                  </ul>
+                  <h5>COMPLEMENTOS</h5>
+                  <ul>
+                    <li><a href="complementoscustom.html">Personalizado</a></li>
+                    <li><a href="complementoscatalogo.html">Catalogo</a></li>
+                  </ul>
+              </div>
+
+              <div class="col-lg-3 col-md-3">
+                <h5>TECNOLOGIAS</h5>
+                  <ul>
+                    <li><a href="badanas.html">Badanas</a></li>
+                    <li><a href="materiales.html">Materiales</a></li>
+                  </ul>
+                <h5>SOBRE NOSOTROS</h5>
+                  <ul>
+                    <li><a href="about.html">Quienes somos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                  </ul>
+                <h5>SIGUENOS <a href="https://www.facebook.com/pages/Roger-Sport/616391605087554?ref=hl"><img id='facebook-icon' src="../images/icon/facebook.png"></a>
+                              <a href="https://plus.google.com/102787408850322895760/about?_ga=1.17424958.626591686.1435356668" rel="publisher"><img id='googleplus-icon' src="../images/icon/googleplus.png"></a></h5>
+
+                <h5>DUDAS</h5>
+                  <ul>
+                    <li><a href="faq.html">Preguntas frecuentes</a></li>
+                  </ul>
+              </div>
+
+              <div class="col-lg-3 col-md-3">
+              <h5>PREGUNTAS Y SUGERENCIAS</h5>
+                  <div id="form-messages"></div>
+
+                  <form id="ajax-contact" method="post" action="mailer.php">
+                    <div class="field">
+                      <label for="name">Nombre</label>
+                      <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="field">
+                      <label for="email">Email</label>
+                      <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="field">
+                      <label for="message">Duda o sugerencia</label>
+                      <textarea id="message" name="message" required></textarea>
+                    </div>
+
+                    <div class="field">
+                      <button id='enviar' type="submit">Send</button>
+                    </div>
+                  </form>
+              </div>
+
+            </div>
+
+        </div><!-- end footer -->
+
+
+        <div class="cookiesms" id="cookie1">
+          Esta web utiliza cookies, puedes ver aquí nuestra<a href="../files/politicacookies.pdf">&nbsp&nbsp&nbsp&nbsp política de cookies&nbsp&nbsp&nbsp&nbsp</a>
+                    Si continuas navegando estás aceptándola
+          <button onclick="controlcookies()">Aceptar</button>
+            <div  class="cookies2" onmouseover="document.getElementById('cookie1').style.bottom = '0px';">Política de cookies + </div>
+        </div>
+        <script type="text/javascript">
+          if (localStorage.controlcookie>0){
+            document.getElementById('cookie1').style.bottom = '-50px';
+            }
+        </script>
+        <script type="text/javascript" src="../css_js/ga.js"></script>
+  </body>
+</html>

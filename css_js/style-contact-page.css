@@ -1,0 +1,102 @@
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.field {
+  margin: 30px;
+}
+@font-face {
+  font-family: 'fontone';
+  src: url('../fonts/gothic.ttf'); /* IE9 Compat Modes */
+  src: url('../fonts/gothic.ttf') format('truetype'), /* IE6-IE8 */
+       url('../fonts/gothic.ttf') format('truetype'), /* Modern Browsers */
+       url('../fonts/gothic.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/gothic.ttf') format('truetype'); /* Legacy iOS */
+}
+label {
+  font-size: 22px;
+  font-weight: 100;
+  font-family: 'fontone';
+  display: block;
+  text-align: center;
+  margin-bottom: 25px;
+  color: rgb(118, 118, 118);
+  border-radius: 0px;
+}
+
+input {
+  border: solid 1px rgb(213, 213, 213);;
+  height: 50px;
+  font-family: 'fontone';
+  color: gray;
+  width: 100%;
+  font-size: 16px;
+  padding: 5px;
+  border-radius: 0px;
+}
+input:focus {
+   outline: none !important;
+   border: solid 1px red;
+}
+textarea:focus {
+  outline: none !important;
+   border: solid 1px red;
+}
+textarea {
+  border: solid 1px rgb(213, 213, 213);;
+  padding: 5px;
+  color:gray;
+  font-family: 'fontone';
+  width: 100%;
+  height: 130px;
+  font-size: 16px;
+  border-radius: 0px;
+}
+
+#enviar {
+  font-family: 'fontone';
+  display: inline-block;
+  border: none;
+  font-size: 20px;
+  padding: 15px 5px;
+  background: rgba(0, 0, 0, 0.25);
+  color: white;
+  margin-top: 10px;
+  width: 100%;    
+  text-align: center;
+  border-radius: 0px;
+  border: solid 1px white;
+  -moz-transition: all 0.4s ease-out;  /* FF4+ */
+    -o-transition: all 0.4s ease-out;  /* Opera 10.5+ */
+    -webkit-transition: all 0.4s ease-out;  /* Saf3.2+, Chrome */
+    -ms-transition: all 0.4s ease-out;  /* IE10? */
+     transition: all 0.4s ease-out; 
+}
+
+#enviar:hover, #enviar:focus {
+  background: rgba(0, 0, 0, 0.05);
+  color: rgba(0, 0, 0, 0.75);
+  cursor: pointer;
+  border: solid 1px black;
+  -moz-transition: all 0.4s ease-out;  /* FF4+ */
+    -o-transition: all 0.4s ease-out;  /* Opera 10.5+ */
+    -webkit-transition: all 0.4s ease-out;  /* Saf3.2+, Chrome */
+    -ms-transition: all 0.4s ease-out;  /* IE10? */
+     transition: all 0.4s ease-out; 
+}
+.success {
+  padding: 20px;
+  margin-bottom: 10px;
+  color: #468847;
+  border: solid 1px green; 
+}
+
+.error {
+  padding: 20px;
+  margin-bottom: 10px;
+  color: #b94a48;
+  border: solid 1px red;
+}
+
+
